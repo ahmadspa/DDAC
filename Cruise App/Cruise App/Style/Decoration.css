@@ -1,0 +1,734 @@
+﻿#inner-content{
+    margin-left:2%;
+    margin-right:2%;
+    /*width:100%;*/
+    
+}
+/*my profile page*/
+#left-side{
+    float:left;
+    height:370px;
+    width:380px;
+    /*border:1px solid rgba(0,0,0,0.1);*/
+    border-right:1px solid rgba(0,0,0,0.1);
+    border-top:1px solid rgba(0,0,0,0.1);
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    border-radius:3px;
+    margin-top:20px;
+    /*background:rgba(0,0,0,0.15);*/
+}
+#logged{
+    width:90%;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+}
+.image-profile{
+    width:64px;
+    height:64px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    float:left;
+}
+.user-info{
+    width:236px;
+    padding-top:9px;
+    line-height:30px;
+}
+.sub-menu{
+    margin-bottom:-20px;
+}
+
+#right-side{
+    float:right;
+    height:370px;
+    width:600px;
+    /*border:1px solid rgba(0,0,0,0.1);*/
+    margin-top:20px;
+    /*border-radius:3px;*/
+}
+#calendar{
+    width:100%;
+    height:100%;
+}
+.calendar-style{
+    background:rgba(0,0,0,0.2);
+}
+.no-decoration a{
+    text-decoration:none;
+}    
+.no-decoration a:active{
+    text-decoration:none;
+}   
+#gridview{
+    position:relative;
+    top:70px;
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius:3px;
+    height:406px;
+    background:rgba(0,0,0,0.15);
+    overflow-y:scroll;
+    width:100%;
+}
+.diffcolor{
+    border:1px solid rgba(255,255,255,0.1);
+    background-color:#666666;
+    border-radius:3px;
+    position:relative;
+    top:13px;
+    margin-right:10px;
+            
+}
+.diffcolor1{
+    background-color:orange;
+    border-radius:3px;
+    position:relative;
+    top:13px;
+}
+#option{
+   width:100%;
+}
+#option img{
+    text-align:center;
+}
+.menu1 {
+    text-decoration:none;
+    color:rgba(0,0,0,0.8);
+    font-size: 16px;
+    line-height: 37px;
+    transition: background 0.4s linear 0s, color 0.5s linear 0s;
+    font-weight: 600;
+}
+
+.menu1:hover {
+   color: #ff6a00;
+}
+/*end of my profile page*/
+
+/*Sing Up Page Start*/
+
+.table-column1{
+    text-align:right;
+    padding-right:2px;
+    /*padding-top:7px;*/
+}
+.table-column2{
+    /*padding-top:5px;*/
+    text-align:left;
+    width:463px;
+
+}
+.textbox{
+    border:1.4px solid rgba(0,0,0,0.4);
+    border-radius:3px;
+    font-size:100%;
+    color:rgba(0,0,0,0.8);
+}
+.textbox:focus{
+    border:1.4px solid rgba(248, 142, 132, 0.95);
+    /*border:1.4px solid rgb(0, 148, 255);*/ 
+}
+
+#buttons-message{
+    width:597px;
+}
+.messagebox{
+    float:left;
+    width:230px;
+    position:absolute;
+    left:230px;
+    top:1400px;
+    /*color:rgb(0, 148, 255);*/
+}
+.buttons{
+    width:318px;
+    float:right;
+}
+.cancel-button{
+    float:right;
+    width:130px;
+    height:50px;
+    border:none;
+    border-radius:3px;
+    font-size:100%;
+    background: rgba(0,0,0,0.5);
+    color:rgba(255,255,255,0.8);
+    margin-right:10px;
+    transition: background 0.3s linear 0s, color 0.4s linear 0s;
+    
+}
+.cancel-button:hover{
+    float:right;
+    width:130px;
+    height:50px;
+    border:none;
+    border-radius:3px;
+    font-size:100%;
+    background: rgba(248, 142, 132, 0.95);
+    color:rgba(255,255,255,0.9); 
+    margin-right:10px;
+    transition: background 0.3s linear 0s, color 0.4s linear 0s;
+    
+}
+.signup-button{
+    float:right;
+    width:130px;
+    height:50px;
+    border:none;
+    border-radius:3px;
+    font-size:100%;
+    background: rgba(0,0,0,0.5);
+    color:rgba(255,255,255,0.9);
+    transition: background 0.3s linear 0s, color 0.4s linear 0s; 
+}
+.signup-button:hover{
+    float:right;
+    width:130px;
+    height:50px;
+    border:none;
+    border-radius:3px;
+    font-size:100%;
+    background: rgba(248, 142, 132, 0.95);
+    color:rgba(255,255,255,0.9);
+    transition: background 0.3s linear 0s, color 0.4s linear 0s; 
+}
+/*Sing Up Page End*/
+
+/*Manage Booking Start*/
+.center-infor{
+    background:rgba(0,0,0,0.7);
+    color:rgba(255,255,255,0.9);
+    height:65px;
+    border-radius:5px 5px 0px 0px;
+}
+.center-infor h3{
+    padding:5px 15px;
+}
+#top-information{
+    border:1px solid rgba(0,0,0,0.3);
+    border-radius:0px 0px 5px 5px;
+    margin-bottom:20px;
+    margin-top:0px;
+    height:400px;
+}
+
+.left-top-info{
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:20px;
+    border-right:1px solid rgba(0,0,0,0.3);
+    width:350px;
+    float:left;
+    height:300px;
+
+}
+.right-top-info{
+     border:1px solid rgba(0,0,0,0.3);
+     border-radius:3px;
+     width:597px;
+     height:300px;
+     float:right;
+     margin-top:20px;
+     margin-right:20px;
+}
+
+.textbox1{
+    border:1.4px solid rgba(0,0,0,0.4);
+    border-radius:3px 0px 0px 3px;
+    font-size:100%;
+    color:rgba(0,0,0,0.8);
+}
+.table-column3{
+    padding-top:7px;
+}
+.textbox1:focus{
+    border:1.4px solid rgba(248, 142, 132, 0.95);
+    /*border:1.4px solid rgb(0, 148, 255);*/ 
+}
+#calendar{
+     width:597px;
+     height:300px;
+}
+#search-navigation{
+    /*border:1.4px solid rgba(0,0,0,0.4);
+    border-radius:5px 5px 5px 5px;*/
+    width:300px;
+    height:50px;
+    position: absolute; 
+    top: 675px; 
+    left:178px;
+}
+.search-button{
+    width:100%;
+    float:right;
+    
+}
+.Search11{
+    
+    float:right;
+    width:130px;
+    height:50px;
+    border:none;
+    border-radius:3px;
+    font-size:100%;
+    background: rgba(0,0,0,0.5);
+    color:rgba(255,255,255,0.9);
+    transition: background 0.3s linear 0s, color 0.4s linear 0s; 
+}
+
+.Search11:hover{
+    float:right;
+    width:130px;
+    height:50px;
+    border:none;
+    border-radius:3px;
+    font-size:100%;
+    background: rgba(248, 142, 132, 0.95);
+    color:rgba(255,255,255,0.9);
+    transition: background 0.3s linear 0s, color 0.4s linear 0s;  
+}
+
+#gridview1{
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius:3px;
+    height:600px;
+    background:rgba(0,0,0,0.15);
+    overflow-y:scroll;
+}
+.gridview-table{
+    text-decoration:none;
+}
+/*Manage Booking End*/
+
+/*Process booking start*/
+#top-information1{
+    border:1px solid rgba(0,0,0,0.3);
+    border-radius:0px 0px 5px 5px;
+    margin-bottom:20px;
+    margin-top:0px;
+    height:700px;
+    /*background-color:#C7D0D5;*/
+}
+.top-info{
+    margin:1.3% 1% 1.2% 1%;
+
+    background-color:rgba(0,0,0,0.05);
+    height:70px;
+    width:98%;
+}
+.left{
+    border-right:1px solid rgba(0,0,0,0.3);
+    width:8%;
+    height:100%;
+    float:left;
+    text-align:center;
+    margin-right:10px;
+}
+.lblDay{
+    position:absolute;
+    top:366px;
+    margin-left:34px;
+    font-size:22px;
+}
+.lblDayName{
+    position:absolute;
+    top:397px;
+    margin-left:20px;
+    font-size:17px;
+}
+.center{
+    font-size:17px;
+    width:100%;
+    height:100%;
+}
+.lblArrivalCity{
+    position:absolute;
+    top:366px;
+}
+.lblTripOption{
+    position:absolute;
+    top:397px;
+}
+.lblFrom{
+    position:absolute;
+    top:397px;
+    left:341.4px;
+}
+.lblDestination{
+    position:absolute;
+    top:397px;
+    left:388px;
+}
+.center-info{
+    width:98%;
+    height:232px;
+    float:left;
+    margin:0% 1% 1.2% 1%;
+    
+    background-color:rgba(0,0,0,0.05);
+}
+.left1{
+    float:left;
+    width:378px;
+    height:232px;
+    /*border:1px solid rgba(248, 142, 132, 0.95);*/
+    margin-right:10px;
+    /*margin-top:15px;*/
+   
+}
+.center1{
+    font-size:15px;
+    float:left;
+    width:360px;
+    height:232px;
+    /*border:1px solid rgba(248, 142, 132, 0.95);*/
+    margin-right:10px;
+}
+.right1{
+    float:left;
+    width:248px;
+    height:232px;
+    /*border:1px solid rgba(248, 142, 132, 0.95);*/
+}
+.info{
+    font-size:15px;
+    font-weight:bold;
+    margin-left:56px;
+}
+.info1{
+    float:right;
+    text-align:right;
+    font-size:15px;
+    margin-right:20px;
+}
+.info2{
+    float:left;
+    font-size:30px;
+    font-weight:bold;
+    margin-left:110px;
+}
+.info3{
+    float:right;
+    font-size:30px;
+    font-weight:bold;
+    margin-right:20px;
+}
+.info4{
+    font-size:15px;
+    font-style:italic;
+    float:right;
+    margin-right:20px;
+}
+.info5{
+    font-size:15px;
+    float:right;
+    margin-right:20px;
+    margin-top:-13px;
+}
+.info6{
+    font-size:15px;
+    float:left;
+    margin-left:70px;
+    margin-right:8px;
+    margin-top:1.5px;
+}
+.info7{
+    font-size:25px;
+    float:left;
+    margin-left:2px;
+    margin-right:3px;
+    font-weight:bold;
+    margin-top:-6px;
+}
+.info8{
+    font-size:25px;
+    float:left;
+    /*margin-right:20px;*/
+    font-weight:bold;
+    margin-top:-6px;
+}
+.bottom-info{
+    margin:0% 1% 3% 1%;
+    background-color:rgba(0,0,0,0.05);
+    height:348px;
+    width:98%;
+    float:left;
+    /*border:1px solid rgba(248, 142, 132, 0.95);*/
+}
+.Guest-number{
+    margin-top:2px;
+    margin-left:9px;
+}
+.booking-info{
+    width:98%;
+    height:100%;
+}
+.booking-table-info{
+   width:100%;
+   height:200px;
+   border:1px solid rgba(0,0,0,0.3);
+   margin-left:9px;
+   margin-top:15px;
+   border-collapse: collapse;
+}
+.booking-table-info-row{
+    border:1px solid rgba(0,0,0,0.3);
+    width:100%;
+    height:10px;
+    text-align:center;
+}
+
+.booking-table-info-column{
+    width:25%;
+    height:25%;
+    border:1px solid rgba(0,0,0,0.3);
+    font-size:16px;
+}
+.dollar-symbols{
+    width:10px;
+    float:left;
+    /*position:absolute;
+    top:829px;
+    left:510px;*/
+    margin-left:88px;
+}
+.price{
+    float:left;
+    margin-top:16px;
+    margin-left:5px;
+}
+.book-button-section{
+    width:100%;
+    margin:20px 1% 1.2% 1%;
+    
+}
+.book-button{
+    float:right;
+    border:none;
+    border-radius:3px;
+    font-size:100%;
+    background: rgba(0,0,0,0.5);
+    color:rgba(255,255,255,0.9);
+    transition: background 0.3s linear 0s, color 0.4s linear 0s; 
+}
+.book-button:hover{
+    float:right;
+    border:none;
+    border-radius:3px;
+    font-size:100%;
+    background: rgba(248, 142, 132, 0.95);
+    color:rgba(255,255,255,0.9);
+    transition: background 0.3s linear 0s, color 0.4s linear 0s;  
+}
+
+.back-button{
+    float:right;
+    border:none;
+    border-radius:3px;
+    font-size:100%;
+    background: rgba(0,0,0,0.5);
+    color:rgba(255,255,255,0.9);
+    transition: background 0.3s linear 0s, color 0.4s linear 0s;
+    margin-right:15px; 
+}
+.back-button:hover{
+    float:right;
+    border:none;
+    border-radius:3px;
+    font-size:100%;
+    background: rgba(248, 142, 132, 0.95);
+    color:rgba(255,255,255,0.9);
+    transition: background 0.3s linear 0s, color 0.4s linear 0s;  
+}
+.ErrorMessage{
+     float:right;
+     font-size:100%;
+     margin-right:10px;
+     margin-top:10px;
+}
+
+/*End of booking page*/
+
+/*Payment Page Start*/
+.info9{
+    font-size:18px;
+    float:right;
+    margin-right:20px;
+    margin-top:5px;
+}
+.info10{
+    font-size:35px;
+    font-weight:bold;
+    position:absolute;
+    top:605px;
+    right:310px;
+}
+.info11{
+    float:right;
+    font-size:35px;
+    font-weight:bold;
+    position:absolute;
+    right:193px;
+    top:605px;
+}
+.info12{
+    font-size:18px;
+    float:right;
+    margin-right:20px;
+}
+.info13{
+    float:left;
+    font-size:30px;
+    font-weight:bold;
+    margin-left:110px;
+    margin-top:3px;
+}
+.info14{
+    float:right;
+    font-size:30px;
+    font-weight:bold;
+    margin-right:20px;
+}
+
+.purchasetable{
+    width:500px;
+    margin-top:20px;
+}
+.table-column4{
+    text-align:right;
+    width:20%;
+    /*padding-right:2px;*/
+    padding-bottom:10px;
+}
+.table-column5{
+    /*padding-top:5px;*/
+    text-align:left;
+    width:463px;
+
+}
+.textbox4{
+    border:1.4px solid rgba(0,0,0,0.4);
+    border-radius:3px;
+    font-size:100%;
+    color:rgba(0,0,0,0.8);
+    margin-bottom:3px;
+}
+.textbox4:focus{
+    border:1.4px solid rgba(248, 142, 132, 0.95);
+    /*border:1.4px solid rgb(0, 148, 255);*/ 
+}
+.purchase-button-section{
+    width:500px;
+}
+.purchase{
+    float:right;
+    border:none;
+    border-radius:3px;
+    font-size:100%;
+    background: rgba(0,0,0,0.5);
+    color:rgba(255,255,255,0.9);
+    transition: background 0.3s linear 0s, color 0.4s linear 0s;
+    margin-right:10px;
+    margin-top:-6px; 
+}
+.purchase:hover{
+    float:right;
+    border:none;
+    border-radius:3px;
+    font-size:100%;
+    background: rgba(248, 142, 132, 0.95);
+    color:rgba(255,255,255,0.9);
+    transition: background 0.3s linear 0s, color 0.4s linear 0s; 
+}
+.cancel-button1{
+    float:right;
+    border:none;
+    border-radius:3px;
+    font-size:100%;
+    background: rgba(0,0,0,0.5);
+    color:rgba(255,255,255,0.9);
+    transition: background 0.3s linear 0s, color 0.4s linear 0s;
+    margin-right:8px;
+    margin-top:-6px; 
+}
+.cancel-button1:hover{
+    float:right;
+    border:none;
+    border-radius:3px;
+    font-size:100%;
+    background: rgba(248, 142, 132, 0.95);
+    color:rgba(255,255,255,0.9);
+    transition: background 0.3s linear 0s, color 0.4s linear 0s; 
+    margin-right:8px;
+    margin-top:-6px; 
+}
+#gridview3{
+    /*position:relative;
+    top:460px;*/
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius:3px;
+    height:400px;
+    background:rgba(0,0,0,0.15);
+}
+.lblMessage12{
+   float:right;
+   margin-right:20px;
+}
+/*Traking Page*/
+#top-information2{
+    border:1px solid rgba(0,0,0,0.3);
+    border-radius:0px 0px 5px 5px;
+    margin-bottom:20px;
+    margin-top:0px;
+    height:376px;
+    /*background-color:#C7D0D5;*/
+}
+.top-info1{
+    margin:1.3% 1% 1.2% 1%;
+    background-color:rgba(0,0,0,0.05);
+    height:350px;
+    width:98%;
+}
+.my-content{
+    /*border: 1px solid rgba(255,255,255,0.1);*/
+    width:60%;
+    height:160px;
+    position:absolute;
+    right:175px;
+    top:380px;
+}
+.time{
+   font-family: 'Segoe UI Light';
+   font-size:100px;
+   /*border: 1px solid rgba(255,255,255,0.1);*/
+   margin:auto 0%;
+   border-radius:3px;
+   text-align:center;
+   padding-bottom:30px;
+   
+}
+.event-content{
+    width:50%;
+    height:100px;
+    position:absolute;
+    right:385px;
+    top:550px;
+    
+}
+.Day{
+    font-family: 'Segoe UI Light';
+    font-size:80px;
+    margin-top:-15px;
+    float:left;
+    margin-right:5px;
+    text-align:center;
+}
+#mytripinfo{
+
+}
+#gridview2{
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius:3px;
+    height:406px;
+    background:rgba(0,0,0,0.15);
+    overflow-y:scroll;
+}

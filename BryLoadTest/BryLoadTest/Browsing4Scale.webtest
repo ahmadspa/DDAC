@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="WebTest1" Id="3402a4fc-430c-4235-9259-4a1d84e508fc" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="WebTest1.b001291f-6c94-43cc-9578-92c86e821a2a.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <Request Method="GET" Guid="d34423df-ffe9-4199-8aa2-8f8a92629ec5" Version="1.1" Url="http://cruise-northcentralus.azurewebsites.net/" ThinkTime="4" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False" />
+    <Request Method="GET" Guid="735705ee-b775-4351-93f4-28d8b1834576" Version="1.1" Url="http://cruise-northcentralus.azurewebsites.net/WebForm/Login.aspx" ThinkTime="30" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://cruise-northcentralus.azurewebsites.net/" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam15.btnSend" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="btnSend" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+    <Request Method="POST" Guid="887326e0-e6cd-4a7d-a935-2246700432df" Version="1.1" Url="http://cruise-northcentralus.azurewebsites.net/WebForm/Login.aspx" ThinkTime="5" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://cruise-northcentralus.azurewebsites.net/WebForm/MyProfile.aspx" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://cruise-northcentralus.azurewebsites.net/WebForm/Login.aspx" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__EVENTTARGET" Value="{{$HIDDEN1.__EVENTTARGET}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN1.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="8FC8cwjPXP4r3dM3XuUhWeDXMy+F5+Ud6W7otzaEA9dkkdG+c2A78IWdWCegRfY1h8sh0EO8N18++nrbtdtDj2JyDXPTdgB+85+p1UiEgrw=" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="A66243D2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="LFXnjKGCSAFVFPfWIAMIxFHiUSno/vLdqCNP45nJdDpAAAfgTPwac/BJu6u3WpDZFUqKWuBptYsMH6g4j96Vjl08TNFVof1L1kgvpzeBHBW1wxgoANSUgzfIyKtV1VPugxZuM2YOo3Ntqa7mOz+QaTc8jSvhkeqrYj5/g0RknYN32Gcw82ffo14dp8aUY12kR0STkV6N24DQO6eHv0doBA==" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="txtUsername" Value="sabry" RecordedValue="sabry" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="txtPassword" Value="123" RecordedValue="123" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="btnSend" Value="Login" RecordedValue="Login" CorrelationBinding="{{FormPostParam15.btnSend}}" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="16a35aae-980b-44b3-a462-995cfb235b0d" Version="1.1" Url="http://cruise-northcentralus.azurewebsites.net/WebForm/MyProfile.aspx" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://cruise-northcentralus.azurewebsites.net/WebForm/MyProfile.aspx" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__EVENTTARGET" Value="ctl00$ContentPlaceHolder3$lnkMyProfile" RecordedValue="ctl00$ContentPlaceHolder3$lnkMyProfile" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN1.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="FJJnMq0xmYDmjpAhxZ4JxPLpz1jbDqoD5X5YZMmlS2ACVi/mDpGhfNpJsCT59OU9TSpwxrLVKBIwbir97Xa+Yrlozode80bE/vqZVkZRh9/BdZ0LLq1+o8L6wNnWw+4Df3GfKG+yuvwut5LgIwlfvQyrebLXJFPZNZfB3/wK8tOSbs5A/Yu/92dk4H2JbG03MHYWAj5nkfxMLl3pCXYh7zqDuMnS3/8NdRFPfTSpr/n+mHDKhD/snZrgZHk+9N8fj4NdZZYbDLkkp4cYZBAXoyGNwSItyXoqwVniKQVK4UYs1EjH5zD2EG3ZIP44lwro8gzckodQKXJFX2CJc7H9KMy5EkmX/mPeih7jjn2QWe57yf0m8995IpP9cNL5lapZJMQGpMMn8EhPXPjfOU4/DPxlvdiPqUpNtZFJqSc0Prh8awmLbKNGeWh/xL1bMwHAzyhA4sHqgt7aJc1tW2rMGEh2Gf7gNg++BMiwY10nWNoHKvvcHJnjqWYt2ii74DnfHrrmfav1Ntdvvp8McmffUp9yP9ynRQ5pYj3CHv3uJCXYufnNOUZQZRxuwrtllgndtZMeqIUx+cVW5UCbLdFVIBkq+HieayzUmOgjhI4hsZ4/Kt4+Oflex1tENlLkPvHoMScAD3dacI8bwZ7/ORfj9bYYR0m0SvC1vc+I1Td6Ac8PqBH7j+j25dZZTgG9yWwEdH3XHkjgMQhzZOzjI4NPzFnghs4JMACb9Rrki1Ur/hRdSN8CkGveL1ofb6h9yu5H9SSBE3AI6a9+aebpHZvyghxgUiyK0zPiUe538czbNJA3ZYErrZ1PfBhfiI52sgamjsxJkILe+Ryt4bxeil/BFswX4HQrsEwfiyB5zTRsfR7Udi54wkO32pgbD2R1h4Cz20JJmx9m1qTYgAWiMxJMU7wm0AH0JjogUpe3d9J0Qm5iUZJ45VsRRjFCzTZJlQjZx5tUFBVBl5HG3Hol6lpzwLYNDCWWThVIEBekb0uPExzVlx/jbz9suptrEkY31rUX2QhqD1aq5kqMpyCdm2l2WybHIp0DVvm484xEZEAAmypxojL+D/PGFWQeFSjaN8c85JuIUSNcEnsIZzjbRQV2B2q7YjvO+0KyXxyfJ3aHFPzYV+RMXzP/4+5evRDA3/ePr1W4gQ0PGX3/sTzVb5VyXy33a01u8d3SlNUV7QqOEezrCOthTnhPBiCMbRgUbvb4RACVzZXKnoKgWwUpyCbUHVvGnYrI5hPb//BSA7KjyjoEeaigigVO79/jppxsY089" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="D59585A9" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="g8BbANV2eOKXbq8fEf5BVf2tPDykIlEo/oJr8X+cQvdwV3qT3dk0lmj8GDjg3rCa5ua/M5xKOu8eTFbtYdUCQLUnmK3UAMRbA31VIiK7xg2VEht3zxlDq6EHG+UedP6pib2CgwE/XJB5qPAThxYTRIJBCikobpY1LJeTFa97B7sdjlBaYmL4bzEVFlcAW7j4jbEZv8GborJzZlF4P3TaNp99APYjIqGodfvObG6icQFG3r/KWV6trh2+yAZ8DvD0YgmSaCof5n/dK0SNTKS3wVdco0lMJlahFpaKsIdD6qavh+IMkfr090DMN1Qx45AhA6osXE9fDoN0sA4BK0GrVb8lFXanZYci7jcsN2YuPBJqLnMPzB1vzPvrpX5hcvKa1KX767QF/kCzp12JNy0XHAAfb/5lFvGLOXCe6gJBLRlJ1GI7WRoD00AGa53rlpt/j5QBrVzffhEywL21PSq6u4w72ZYbtY4tji2AVXlhh+m4bBn0SmlNLHxpEFzyTl5geAJDMKRTqK8KZIdiqISKck8+/iLxdkGzD/UB6P4Afg9sSg8bb+5HfkRVvjhDE5Ov37reOjgbkR5bSnCSb0zTP5SDOtUeKadzaS+DsbpXh3nAKDmkOpkZy7UcTCbcQyOZjJ0L15UhGNkWf820n0Rfx3F5MsXZWAFMY7uICn93JoV8+s56rwfFB5Kp0TU7nQxLbA4PrfcaTLKEOCABw65jWLMIl3qZWfKmgXFgo0AmCEdchqnBmmbUtLj0fWpDP7E/Mzi2VLrrDPLu0jiIXRPz4SVdqgPUiBxRzsNvbPrKjYzcIqgmEdoaHUlpsoq+XU+YxWCY1WpBq3rFRNuO2HhBfWZJdII6KywPN6lhUPNClkQLEK5nZmO2CthQ15uTnSiniLUeEFR5R7C9/VRz0Kl3E8VPvKnPlTSzsEvVSNCtO/74DSrHQ5lUUat4E4uF29EoJsRP6Lz4wciE/FJ5BHy7qbMFULpioazoOs8adRxq0bxloSAt0HP199tku6kVWKPhCzrNhVPscj9QvwUkgvhPr0c6Q/Ao5XYxQDid1HtQyNTRiiydcx6XcRRC4aqZDLoo1sOmuZeMQUe5//7/ngT4IdBBfXhWam8Tu8PA7n1MNpPuT0upU/ylkVyxmj1o8ORlcBv3sqvdeHaPR6EudgywUg==" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="6f6ebf24-a838-487d-b4f7-361b413194b5" Version="1.1" Url="http://cruise-northcentralus.azurewebsites.net/WebForm/MyProfile.aspx" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://cruise-northcentralus.azurewebsites.net/WebForm/Manage%20Booking.aspx" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://cruise-northcentralus.azurewebsites.net/WebForm/MyProfile.aspx" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam10.ctl00$ContentPlaceHolder2$dpoCountry" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="lue=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;&gt;Cou" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam11.ctl00$ContentPlaceHolder2$dpoLenght" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="lue=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;&gt;Len" />
+            <RuleParameter Name="Index" Value="9" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam12.ctl00$ContentPlaceHolder2$dpoShip" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="lue=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;&gt;Shi" />
+            <RuleParameter Name="Index" Value="14" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam13.ctl00$ContentPlaceHolder2$dpoDeparture" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="lue=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;&gt;Dep" />
+            <RuleParameter Name="Index" Value="20" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam14.ctl00$ContentPlaceHolder2$dpoDestination" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="lue=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;&gt;Des" />
+            <RuleParameter Name="Index" Value="25" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__EVENTTARGET" Value="ctl00$ContentPlaceHolder3$lnkManageBooking" RecordedValue="ctl00$ContentPlaceHolder3$lnkManageBooking" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN1.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="ZtEGR5AuPsy3wwr2PEaAa/MzCaLj5PRWtsQcDKxLBtvBL5wc1RCja6jaevlVwTYC3EUTf0CBnLTWr3/E01x9lR0n2Xlj/DYItjM2YvxlQrdMy0LwriXwCOue6LwJBjq8K78AbQhuPGs2dz/09HZ/dZ2rDL11H38AJFBbahZpO4OI8cZv9NjX7OHOl6pJPxW86mbHjE3b+L6OhjKK5Ws/DU9ajEw/N1cOU8b5eprBmaXE6YDSHftAuk9Dfzdflyc8li08lCADqQF/QoLYPvIiajj9l/OQa5RpnSW7wqxwpMRYoZhYr9/Gxh5V72SkJhGohvqV+oLssLI8SMd2wGuHblP1oUpbYBvOClkju4HJqF3tmeiCcz1g7cT4JBXCAZy+jCnwbNpWc0ZsblaUSd08VBque5/h0HCtY3JNsS2qi0eQVoH9d1k+0EJSHOVEO48pb2VFJVtUlpOyC1R5djcKg8/oQN22urWenI6ZJE31HS3uNBQ8lMIdqods1z/rxUKcjakd4cojWTecXVQCDu70MP2sO7ZbFZ0ch6vCi1tNr/ryDJP3EMXsBRT/IYZi0V/yAaNa+DbuHnEdewCXiiRqf2vgPCtTm8db9n7//SeEoPjDPRq+94bU9XhIiSzsvvJd9jm8rnEe52MZamCCtZy93Pwmdj1nAicThV4Uj+ITMMbdPHVKPMHyJApv/KrzIRmBHd24bVqPoaNHKxDJEAJqr8nNnreA/BtJAhxl1H7i8zj4myhfDqTjunbytwAnDMtmo2A2e2N78YRPQ5zqJkryOMtl0sNqq516gD5K5lSSWivmcCWVbrhYE2nDF72rgGHfn3lRNFDcboKuxYY554ZdwkkcgcqKP2cKcCOMgw7c6lXLfdZay6FVoaOwAZtYAVR3fnT2lSvWATxZ7GkBaRHRRL+XooIW+jXhX4JvAc0/7nYN1kcXFEEX/E6u4G4KHRfr9S0qoK7PqTYghWL+E9Bp5FuZHCskY2etCzeUGF2of2PyJBI7khYGUr75pIlwLsbM/u2lysiYWaJJXzUDdXN0UWJRC56O3kSx+GwTeEWl8slFnDWClE/eR1kTTH/x2NsegnLKDOP04rUxGGnA0xBiV/wdvkFQZewiU8usny8wMjHQ/x7vdbYgdfkG7hNBPDv44x/VHyVUWbJ42UOpXc6lvtOo5+VVAkGBSeR6v77vPuewYBc3UPXLb8wxaVSLUS/x/VPJ/Vp9u/NbjSPRJd2zJYtFlbZaBcLrb9DrNaT27H2jFuB2GPyGjEhmY0r+oOI6" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="D59585A9" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="iD8lkh+L2OJMS27X9URbLzNmOujaNqzzQTrcuXE5CSsiuTmGWcoDVWNxcThwRAOP4SHq0gjJC1aD55qBixwE7fDuTHh8OElrT/hN5uIFcGWNEZTpfqzWjnc5kwzTUmDx36p3ABf7PZ5YU1uZnD9JPVrDnEcQC/nmUbEXzXXamfsSTsbYwHCD2UPcrprHWxFyEuePEglTCY1f+FiZYtcgNt83VMF0sAsEnSU2qSSgi1tfFfWUfW6i4/1DbUYk9mWtsLHRz5I0ApPfQclY7P19ARshFb0IhZkWHsJUeJg/xrZOWyFOTMhWdetNwtBpNkC9mFr8PKDTicIlGnS6wgXg1CUkqAIM/8o4q4wqDRkZp+tIcWEWh7wGH6fcfp7BAem9Xd+BMwDABXRbXIyeu6TbS7dbR0mJcNOZNK89nRu4iETJRpCZBmYlzShLPtItkXUUs7r47A27k+U38hXQFibefz+it6/CUYWyFpQJu3bXBCZ+mdXrQx1PMkj2zEHe5DLCqcQamO7sno2qnMrNzxHjMeAhDZ7nZFZ7Nc+ItxNCt6oDOzcmLTgXulo2gb8ZEOyVrOownmCW27fKBtHe2oZ4JWIYhtXVZXjMtH0+gHky1NiWPgO/8wHKqPtSrSesMAwL1UBBHL28jZ88853O08aJwu2LiveDzD4Zt7m6Cr+7zUhbZv+N8lKJN7JwndOOhTjl94LGJbcrWz1AiEuzxGmo9qzPuEoHz2V8wF+OwoRTMxNxnX0mUrghIYaXw3WSBYEXVMW0Yw7nNjfgqcnkG44euqrF1fgwpIRoqYcibUXUIOYdrv1DlovLzsjKPZrlWPPXyiQY4fM5K4EnZkLdsq+IGubpdwKALrBzEmV00nvAxIsLMMswEUAEk+IWXonwXDe/e2DufYkTk+uzcQuehK0vSBgwuxu0y6Vi+2/ykpKymlYxzJ7dH8OaECy2dCSEDeAe54SAgTT1FAyACS6u04m+W5TR63bYObHh2JdSrEF0eIJ6XNsuR49HviAvGy0qZY3ONZp+jatm7BQNhexqVfvAcU6stsSLCgqG60wDHVPUMwB4CK0PJQf38IsiLrYy9S1ixL53djL/G9c96XdTf4v2qaVtZ4Zm7VeQV6y98pIcDRkdwzdvJbzh6TZrLSoTTHVsBiSjgXGq7ceAlofv5gaoPw==" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="d9331268-1565-460d-9ded-60f0b142ef9f" Version="1.1" Url="http://cruise-northcentralus.azurewebsites.net/WebForm/Manage%20Booking.aspx" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://cruise-northcentralus.azurewebsites.net/WebForm/Tracking.aspx" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://cruise-northcentralus.azurewebsites.net/WebForm/Manage%20Booking.aspx" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam16.__EVENTTARGET" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="ID&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;}, n" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__EVENTTARGET" Value="ctl00$ContentPlaceHolder3$lnlTrackCuise" RecordedValue="ctl00$ContentPlaceHolder3$lnlTrackCuise" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN1.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="unCKAsGDb/TcL0PzYeyKjuI+zNeTm8YqLdQwvX3marp9bpO2s9aTP43/u6RuEoSP02/gBMCQJeN4YbUXuvDs/KVZ/rtDKU68YGzFSuwacOP2l7GljYFwDuO6vBM1w11IFSdmrBj+UrZGe8/eDYl9l0/vRHbzCm1iwvuFmPs1Hv9oyw2LuDegezN4syxd5YprFreL6eYbl+QfZHXzWxqjPA==" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="75E7AE01" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="Pa+lThQZfub+g9kYCdO00gzIuxA/sbY1kEIUbyD2mGqPxMYZVgz+YPTfPdZY5SXABWkL8doDdNR/OqCOyQNQ4Yz76fIi6kFeHb8p6L3aV2/ePy0BPwixVws/VrDX1NXZL9d1KqerfEWbtXz7RYVGDgHvH/XMzex5ud3eaCOZzKnxRyh6IVgC5+0ir902LW+li2ZGsQ9AMJ7cqah6BbLaQ6e1mbpdJpcepQLnqqaaZUGsjkA5Wl+RL5CYLxEzrP5qLW2Z0tqrEiNeRaA4FGBjtJc6cqCutXQuDq85iTsHla8bX1w4Ak1Gel7qYGbTv7JE3k0K/+QtOlqLdhcroBxR7zqkawv/nsDpA/4KgRRpKWOMFfXMskItiNyJcSWGTZkOxaYNfdAVZfUbfyd4xNJ6n4xTb068gdv2HurjGWhsqExHOE8ogjl9Up+aP48pSXVH/yF4HmByZZIN+8mAureItGRGwODPz9hWb7rhW6gF/3mPsJ7313wjNLhofw7kXY/pf7eN0fTls+LaeLB4m6cgNM+48yhc9JnLJOJF0wXBSRBfqfvpsxLkGWIyiWwnMXD+DqXWzL+SyigA1rmHZ7nOuut3hgtHVkqKsDvvWTD+7vGzAqOhdIRLqEFW4fm6IA9RVxhP0bJSdRgUKVKm36f1YDRRklNKtHrdJw2YypurqxH96gXmdQ8J7TX8+WYmXqgac7d9kodShReOD8+1sCnWec54rYFO9ISconFHeJvUrUIIsbspm9eH3DKZUNhtLK5Av7zQjEWLhZdXWOqS4LUj40AWFwZXnk+1RCRcyYzr2lZCDkRbHMT/voIBi2X15MLKLhK3VXc+RN/JIv9/mFNRbRnW3mzMMAv9zqUjiC0b8vv73oKc25haXsrFox2FyGfMjtbrmWVTOp/HZy7xkWmzFx1Zc/g9gHxyLZ+WepMEGJ6v6aaW3rhMyzs7ukQF0DobVFar7u9c2TK3gLarGd7smtqPqAeFSUW3FejLReqV+fzFv7imqOcsbwpms2zb9oYPhmTxfBHTOV2tP9KX4APqdZ3GKRk73ZsZTAg1dNIVyeAGwkpSpD497z3DC3ejtK3fPI7QuRzuG8WPva54LGQmpF5vNbMGsZ9sNt2vJ5ywLAAD7Fdnb7rGy1coekP+pxrKGJA3ghUQi5uUftdbJU7GHUzcd9Ztbu11Tdu12+4R6Tz7QM85KkTVM6KkBU6RsxtTA1MSUCDsOH/1SoPMJ9RbrIGF6tDh2IHPEBVVDPjT9p/jQI1V5aCRVJzmsZZbw/FbeyEor1irTAoV93o+uzJjK2nH4CERuyJh1r6CYl/4/T+pxzvdA79APM7m+nFROjijaWLw/fYmp9h44/n+lhMB2mkhbRMUivwdgvbmdnwdwK8OIkts+XZ2UaDqNUExZHSrGKRmxG0L0ovB0Fc19Y0t65ZHIkoU97EVamzOtLKn7Kcq6JOPq1PqYF6mAGR27F5COPj3KeP99XBJXAY/Qv01atwe8DgdM8adma6oSyv0Umz+m1V15U664Shl9185nIuK10btB8IvnVFNzqdn2D6NMhe0ah8bW7G965P01whQ/hgs6vn0/w7CjS7i5PrAoDGGn+OxKa5SQKoWcoc4vhaRXKGE7FTtz7vPV3gBi6EgNci/ts6hEWNtsNaoz16tU6FiaBXl/Q95DuAkcZUqArM7qw==" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder2$dpoCountry" Value="Country - Any" RecordedValue="Country - Any" CorrelationBinding="{{FormPostParam10.ctl00$ContentPlaceHolder2$dpoCountry}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder2$dpoLenght" Value="Lenght of Cruise - Any" RecordedValue="Lenght of Cruise - Any" CorrelationBinding="{{FormPostParam11.ctl00$ContentPlaceHolder2$dpoLenght}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder2$dpoShip" Value="Ship - Any" RecordedValue="Ship - Any" CorrelationBinding="{{FormPostParam12.ctl00$ContentPlaceHolder2$dpoShip}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder2$dpoDeparture" Value="Departure Port - Any" RecordedValue="Departure Port - Any" CorrelationBinding="{{FormPostParam13.ctl00$ContentPlaceHolder2$dpoDeparture}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder2$dpoDestination" Value="Destination Port - Any" RecordedValue="Destination Port - Any" CorrelationBinding="{{FormPostParam14.ctl00$ContentPlaceHolder2$dpoDestination}}" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="136e73aa-3c70-48ec-8525-273a047dc658" Version="1.1" Url="http://cruise-northcentralus.azurewebsites.net/WebForm/Tracking.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://cruise-northcentralus.azurewebsites.net/WebForm/MyProfile.aspx" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://cruise-northcentralus.azurewebsites.net/WebForm/Tracking.aspx" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="0" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__EVENTTARGET" Value="ctl00$ContentPlaceHolder3$lnkMyProfile" RecordedValue="ctl00$ContentPlaceHolder3$lnkMyProfile" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN1.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="CTlMWv4G9Xg10KpmZ0UMFQDxQHugI5resulE1csBglhpDdXn6ixJDjx5Bk3FcweKpDzfTFlVKR1MDdAFvXNWSIG8vGkLjv2qELBkvJ79A0Vd/2Q/Htm6qjdkPv2OUOetBXgNSWS0oIaSk4s0tlIuFswrr/YTpGgjxzpDfkGOGtDwjNyDJiuHV4qKNj524Zbtia/L+Bka5ZI8riwGQ6RQdXCBFj9UghROsO7z6JrfYTYrjs8NY9cHi5vWwEVHYgIFLSEkAUku/UNvxXzoHtnqPu9jtrBYl5S9Q+IzcpcbJdA=" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="52CF742B" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="I+smFAELayucnB83DElMq11YbgkYZ7uoOXIPAMr1YIlEYzerp4nwh47w1kYGG4ZjZLFmAeiDOI+eM3faIZzLRi9wxebPWkXl2hJN6VjYXPqKYRAUvZOTX/PE9DG81MrMVP91BGGCVku52N90gpwxOYnyjBTCUe556O8U6COnRKvClYT/8vyb0PRboqafBWw5" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="42380df1-f6a0-4294-99d4-0be64f9c12cf" Version="1.1" Url="http://cruise-northcentralus.azurewebsites.net/WebForm/Tracking.aspx" ThinkTime="4" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="X-MicrosoftAjax" Value="Delta=true" />
+        <Header Name="Referer" Value="http://cruise-northcentralus.azurewebsites.net/WebForm/Tracking.aspx" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="ctl00$ContentPlaceHolder2$ScriptManager1" Value="ctl00$ContentPlaceHolder2$UpdatePanel1|ctl00$ContentPlaceHolder2$Timer1" RecordedValue="ctl00$ContentPlaceHolder2$UpdatePanel1|ctl00$ContentPlaceHolder2$Timer1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTTARGET" Value="ctl00$ContentPlaceHolder2$Timer1" RecordedValue="ctl00$ContentPlaceHolder2$Timer1" CorrelationBinding="{{FormPostParam16.__EVENTTARGET}}" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN1.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="CTlMWv4G9Xg10KpmZ0UMFQDxQHugI5resulE1csBglhpDdXn6ixJDjx5Bk3FcweKpDzfTFlVKR1MDdAFvXNWSIG8vGkLjv2qELBkvJ79A0Vd/2Q/Htm6qjdkPv2OUOetBXgNSWS0oIaSk4s0tlIuFswrr/YTpGgjxzpDfkGOGtDwjNyDJiuHV4qKNj524Zbtia/L+Bka5ZI8riwGQ6RQdXCBFj9UghROsO7z6JrfYTYrjs8NY9cHi5vWwEVHYgIFLSEkAUku/UNvxXzoHtnqPu9jtrBYl5S9Q+IzcpcbJdA=" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="52CF742B" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="I+smFAELayucnB83DElMq11YbgkYZ7uoOXIPAMr1YIlEYzerp4nwh47w1kYGG4ZjZLFmAeiDOI+eM3faIZzLRi9wxebPWkXl2hJN6VjYXPqKYRAUvZOTX/PE9DG81MrMVP91BGGCVku52N90gpwxOYnyjBTCUe556O8U6COnRKvClYT/8vyb0PRboqafBWw5" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__ASYNCPOST" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="e3215ac5-1bab-42d4-abf5-1f23366a1df3" Version="1.1" Url="http://cruise-northcentralus.azurewebsites.net/WebForm/MyProfile.aspx" ThinkTime="3" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://cruise-northcentralus.azurewebsites.net/WebForm/Payment.aspx" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://cruise-northcentralus.azurewebsites.net/WebForm/MyProfile.aspx" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__EVENTTARGET" Value="ctl00$ContentPlaceHolder2$LinkButton2" RecordedValue="ctl00$ContentPlaceHolder2$LinkButton2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN0.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN0.__VIEWSTATE}}" RecordedValue="kCQp59sPCkWlq+6sn3c5KN7m0wTIcNIVXMzhj+xEU2AN20MQqf8MXEGXwUzOi1MvFjAVyWKeWwXfTxfTgQ0b5eLy+PzgDgvX78qN1fswq5HHBm386rFNJbhU9+9LZwQteOxHbm9QvYnKWqLgp8AgpnFgvIbm1hheYjSvp1qL6V3adTliuYl4NqTJ4BSm9okzpoKCntaM62KmNPfIpQwxApPl2V19nzSE1if00uNed2WQTcUge5kDvgC+k6kqKvKThYNqX7cY8wGNN9BnrF1cHCJrtWUH95HjysGeLo9AwoH69j5z4kPbJ7WJtzis2QmVOtDcN9e1dBjbejWJdcC/WEmjSv1GaiaHIPHbjgNRO8jgSiOJb4IYBf6LJqmg6rWVd3gP2CYa5SfRFmfM7PJaapGzhZQWbAkZvYk7vjmnD+LkJhbR+UVECbAhfQ58hgNNpONZJcs38vjqkoNwsv013AKEj24i+r7BqJbzBI4fJq50kFIpwqDoBsrnAI+NQcEuOjFaspC/I3BH+3gbyQDaSjvScxJx/3wBAR3DwAaNr5Wx8XcUyNRylVK+tFF2tE5IlmmaZO0NBHc3Q2gOc/j9WCHcexNkiAUY2AsSU2wwXxM0sdfJumDS9r4OKmWDNc7Gz8T0WA7Xw26K3okxEcThhYsRJc01J7VAutSY87IJ77jhKzoTrCCbQOixqcWy0nOqDPE/50W5bJXbh0pmzsUaRxJMCP1H9gqLsDiJ//mBbV9ax9Kw8Yogd8oXzpkPzXw/RyQ6EoS1/w1nhbZ7FnwAavm3Ytj5hqIYKBYSA9HxaoUXrZgPuPZq9iADxAG3QOp7I2HtmbBG1+eykrtXZzHgmhKtBAcyENEbBeK3YIAdVqajSfsPNd8zdSlHjA/+2PNqs1kIwPuw/reRocS7iGUz0FLW2PSnsM7xcH2p7RnYw/wCGKcTePrDxqymXeMCqjyTyNJV9pMYanPip3QBLxqse7y7FmY051PWi93QqbTlxdqs61UU/OiJ8HVHr2ADzYh6aBRV+P9EM61zjAoHhbKg1yERJU/TLEAW6g11ER1sxNnSZyUJmK+C3sRUeVvuHTvsa5Bx819HRrhsObM/oVs9eErpClXpEVRyZOxKrqQojqX+35p42fpXTh9X0NkHeA3LJBV1OmAd529YJz83ZfOjvu0m5bj9CLwSpDO5aFPTyyHE0jsLVliocW3ydn+mQ17PqVO71Z/k7V6k0OIzVaw5m76tk0hQK9i5lJew50Pt4s9I/pATNMyMV2wSbywnfHXW" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN0.__VIEWSTATEGENERATOR}}" RecordedValue="D59585A9" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN0.__EVENTVALIDATION}}" RecordedValue="wEQimmbqeSLjPshiU/N2dHIYmA3xYFjyCsj5AAUrFZvhoo01IQjwY9LCj5fXwpOfGXyLLFB2vZ+vukqWeXVdZxqxtjL9EUUsnCUr+7SBLwsnM7ZtmNKuXcMBaKRUpAeoyvQKDa+miBZ40JGMNZImUVWmD6lR3spK2p364XhAKxvKmN+HjFN7RFSlkfq7iLiZOePfO7ZmpnN2Za9n33ohiouGKgJQ9epjoxr692nmPRlbGtLEzJsfHu71XRf+De9U/K9bXGgOoENareGYfP+0fLmRdjvcE2OgYTBFPPhdFB5qTXQfeMCG6w9OYiEJx7k3B3bvcjqbVARH9pfty+5ZDcrOMxkOzk7XMpvKPQWcmCHCoEj9RC8lNmAhC3UjmcnsUeW5xOmOsSte6jbeUhGK1Qwooo6Vhvi+ivy9oNaea+UWjBL8Do0KhlXJHnTENCffbcPdAUmIwEal7Z0o/TO1ipN5+oS5B5CKq0KipXIIzRd1N6I2uhgRINIyJ6WHU1VUOcHSLOT7aPdeGurr/n0qouRHvJ1H8uOMzwjLvzilO9novG8K/4IevDmUHm1VVY5N26/O+PumkrZY8qF7BVLGpc8NGOY+9P/nbRFyPLS2g82pnyCHbvZ/p5jDACGy0KwNGSxcDSCgeslRSJ9ajhSwcY/mRShMpogPvqV7I+pAI0wB09MgG3fL+WMRgp8rPPhgt5FAMr5Tpvv8ESkt34MsMjqNf/6ShOekHsBgyJURVM39IlRhknEWItwK1NuHGGuycK8QkYc94uxYdtVFrBh7irE11piep9F3dDW5iy4d0V2M7FeoPqdBfNQsepOVVv8hd3mAyhWszjrUzRcWsbqpk1eJOcvjhFi59j1UM6wPkgdhf3gDadp313uHzvLiUxG6ctdi2ZaVUWdBVTfMr4NRdTbWj/Lywf65aFIfbeqmamHklcuHFMrYhlVsMo6ze7Qzj+TG+/gsEJ1u98C436pBcNQSygahB3ztZawAMhcf+60Gx8jzWIZZMze4hjVKN9zzr4LhPsd9iySBDevxuUb5lqTMt2oQ81ZQ5nVApdQBQePi9XywZ+rFVo1DPFygj64vCCc7TzEzB+dKFh2XMBGR9vDIW/cgByC4NiwD8s5hNt0F8l4u+CEbyp3eU+Uac4H1UAyzvZxQ3pcw6vuGPBl9xA==" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="fd030d76-879f-424e-81cb-1877a8d60963" Version="1.1" Url="http://cruise-northcentralus.azurewebsites.net/WebForm/Payment.aspx" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://cruise-northcentralus.azurewebsites.net/WebForm/MyProfile.aspx" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://cruise-northcentralus.azurewebsites.net/WebForm/Payment.aspx" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__EVENTTARGET" Value="ctl00$ContentPlaceHolder3$lnkMyProfile" RecordedValue="ctl00$ContentPlaceHolder3$lnkMyProfile" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN1.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="SG4mCyOK/QSm00g9kQv2WcuiIkO5NTOb+jQLmDEd1+WnzUrVnnQ/0n41EpgP0ucj9NtUMWYICFTZbM/jv8ts7COVW0JuAUHA+q26vSLLgw0Czm2ATGb8/3pIq4CO+b649WCwoqOZEHQjW/b9JlABvefAvYcs5q7/Fq8T0Q8sJku8pMusyde7Ln9JxIV2NE7iXpJ77TLp0xZ00rtT3Eeu4Cte2+9FNT84jERND8ahDUIa1zXAhOtb0SF9hzbo41pqqsH/N4CWWI+Ty4j+316o5yPMQyunDjsZZfUKPCDejPDoXhWLyrPTQs5f734sur/zvO8Pptwxh7jvh7YxEj0WDMONcpzp/otXaIh9eIrG4PyB6P3h5DR7IgfAebKLFS9YfLxkTm374M8ZdR+0y4oOhpPSNaYXsfiTW2c9putsjGCSsriaaHV2fj2i5T4tkfm1Rz4hV80D2M+NF88xvB2W698BA0JU199xX6v0V+FNqgDIolDfQ+tjAM5O9DQshYHp8qVY7EYAxVyJCpRY/Z998wPPSvRdQfZ+HoiWo67JlR+fe8cEd5lwqNCPCW3He1xJcZIvO3dNNuKAFkO6PGbhJ/gfOGWclqlfc0v9mEd1GpNJ7hemNVBElHhkZidvI+RHANAp4vskdy9wL76l7g05sx/J9Wyi0UWvSXzL8lvcl4oWfyG9ViCIAZ8+AtoUoKHIzTx2eq/XFL4YWpVqHfN3mfpOgOAVRCuiTa4s2lDPouxtw664MzRqpKFG0jAfc15vkfNHMxWY2RBHOIagGZsszRxl0qPB7lSE0LP1UQKg9ct4CTep0w2+cs2SGnVvZFlRnBDN7BiwPOWaMMPYOcBWnc5A0zC7v2o/KrrDfTUVtL0YhI6h00XgpkgiuQgu8cVGo2eP5beeKIam8xNH8V1wHI9GpYl7dc3KG3VMrAToKdRQDwvM1ftxHspKkAjLZIfiuiu09BUqQk4Z4iWTiS5qo2++ujrgR4igfZrupUTA8wS2kAUBjB7Ue7eOQebDqwT0+CiEEQJIgNpUBbiH3Nha5cZx8FHDK9z8DoEGxvwiLiyT1Q/+56t8iRMHmLMRiiwSv846Jc0CXwvDbvZdW2CetE0KXo0QK51MLCB4LpDhYhMPmmhY7zXxPIzk3Xzp91dhLrY08jT8v+IEP7hE9UYZOJMNvXCrDwi56BYh6AAoqZ+WHA5+vB+k9Q8Chc7WMEzrxIShMonMp5dRzZOICoc17dBtOknK6+o0e70dNAZNFVpzD6aBbLTOtoX2h3UWkxVT" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="27D3E89D" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="WupDM7kvvEH+wHByUr8LxpDVCw9M5K2XyBxNDhNuyqGO3DbA7FRxWgQ2QisrP8pwp0CusTF8IQ6N7iEunimSUQTYNyzb/3yb9huvR4qD68krRXURWuwYUQ7cG494eDvgR7ZH6/OKu8nxbOGO2L6M5+GgzZ/bZU083e5b9tnpeIHVkY6xxc7HIEtGLks0dbSY6qiF8EJOHZ8hzPQMQtmCRin18UwU0fOfGfeV4x+TOaXt653BZLcLI7BAPOEaxkk7CGotgb3KYrjybmGZxf/S4NiAtEG0Y51mAM3m/VwBmknxa0mHWr5Rrx0CYruomABWN2A1Tmd8FMERrPSJfKKHKubqVARHmF1pKStXd6SFvRU=" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder2$txtPayment" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="f56d2a73-3633-4c42-a964-2985339af26d" Version="1.1" Url="http://cruise-northcentralus.azurewebsites.net/WebForm/MyProfile.aspx" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://cruise-northcentralus.azurewebsites.net/WebForm/ViewMyProfile.aspx" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://cruise-northcentralus.azurewebsites.net/WebForm/MyProfile.aspx" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam2.ctl00$ContentPlaceHolder2$txtFname" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ContentPlaceHolder2_txtFname" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam3.ctl00$ContentPlaceHolder2$txtLname" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ContentPlaceHolder2_txtLname" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam4.ctl00$ContentPlaceHolder2$txtContact" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ContentPlaceHolder2_txtContact" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam5.ctl00$ContentPlaceHolder2$txtEmail" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ContentPlaceHolder2_txtEmail" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam6.ctl00$ContentPlaceHolder2$txtAddress" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ContentPlaceHolder2_txtAddress" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam7.ctl00$ContentPlaceHolder2$txtUsername" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ContentPlaceHolder2_txtUsername" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam8.ctl00$ContentPlaceHolder2$txtPassword" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ContentPlaceHolder2_txtPassword" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam9.ctl00$ContentPlaceHolder2$dpoGender" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="lue=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;&gt;Mal" />
+            <RuleParameter Name="Index" Value="8" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__EVENTTARGET" Value="ctl00$ContentPlaceHolder2$LinkButton1" RecordedValue="ctl00$ContentPlaceHolder2$LinkButton1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN1.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="b8OR7N0Zmy2MWwix1eEQvPpyl/xgh8nxmCDe1W2t2CFX8PODW1rT3CQlGsYOGUZR1EVbLAWCm6xd6h92InRJtWwCNHOlwPJgaXxa6Cuk0brCbVUwUo0PAX/JKNUTlRuq36zXqZflfwXIBRomif1kFhDmLjECKovNFl7H9zFJE/D9ZlI6rfIhwI+79qfLdNZt8t1Yce3antOfPYIVG2I2py7TXmy4CUUKCH5cYDVoy0BHQqqYC80SnPHHNxoBPWBRGlElj20ixXQoHbNpy+OzxgPEau8qw1mddwDD3H+BBSGfLoGjvVQncK9lf6Ec56uVNYGYiz0h+4O6W8QEi/bD2t+dhnW6bPvA2g7TbV+hDQfz7lFn8gIPijf8c+vaAKaq0EOlgScyKQbmerW0lYf/B9CVtlnE5QAQq7uDUIBk7xd6xBGMNjcAXUoycpDFjFD3KWgJTVDiDRSo0orVDYXgOUP/0tCPJEZjF6BhZoPwFGQQWP0biJ3wA9Z80SsLMLM0EYEHf1rjWB6Ff99iuyHdj0sLxUV+tANYOMRa3sLXg7Fqw6RLYwXvReSezClt4Y+/Iz+fq120S52iySR04WzzaC8Ms793p+D7atBe8Oiy2eZ3nlSWYDMa6BObXwRs5/p236pSwmIPjwQ9bdz1msLavg1Z63Bog3IO6YFI1mYLNxyk9G+D7aeeLpTPXG1tsgdtGDUXUaSNdZ5UpaQfYIe6fMYfB41lab+vKWfEbHtii0BjmbGgWkLup9TWPCJbbKtlUcoUybG1Ma+BDfryE+DWyfNnJhxUvZryPwvNdb6msUKgpPT906cjxnF80Hghrms79KLNJY1D0YfEOxU/aaM916BYZI2HeoDM/PAA9UeLnIiJ2eMTPerJ0jxPa561+sC21CINm+mQ/z7aST6hfl42EojEAryBD0mEVBGHCEhtsITogzTa+lnyreLJ8THkj7Qm8KSLOln2It2Y/GnvFRODe90LuExx9pa6U8O9G4r/j60TNBYC+BBKO8r7WZQSZ55Reio77lKXcQ+e0QcGucc0WsrjllfDaDB1L+6oQGZpnmqEOsqoqqxOks5oGNd+81Z4dzVsbpKWyu9f52tIRhmrFwx8L3VEwhftQjpI1KeDS4Z+YHdlNvqYNJb8V4mQOF66QVMesb/UPW9HAODvVU+S/ZPtXeT1UiXqwvaTj2Im8KHCWr+nF1spDnTqs/+Q4+wwoIgKv8I2URG+w4sDUTIsBbjiYvihpuWdzBIyBFsIe3Bt357tEealEyIl4uY71UUQ" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="D59585A9" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="oKs1QI84IYEmLtGXvecHhyJcrN25Xcgsh88YHFRek/UYsYlG1jDXz6HEjSADPZIZyzTkQpPpNCR9ith76AWuRQPVsGlNNlQ97X5KuwvpdXZeBJ/uUZnk6BF1JxeVtrIT97UpfNr3tmoiVRNfShEmPeMKkJO5E4d0FEJArRPFuvcwLm9XdZ4vqdVplFBserrLC9+Xj0JIBGHKvk76U+H635RaXKdWJ7Y4GkMtLVqbSOt+pyHjTpt+vk9j+J5A0G2J8fuEUR2LhNwpBQ9WTrQqLAIvjSz5j+2LSRGmTHKpo/v8Fm5oMbomCP7bUiKhY3M1kr0W/x83mGG+IjT+PcDY3CGtsp62wmCqyWZYtpqTWptSeeSUG9pcjVDeb6W2gL1gXpz3UrHmsfkGu2F9uk+oPqirLkulXXP5a1Dqa7I/OPSJ1qDR/8UO3cYIkBPA3vLzGvVob1CgGxyjgpCbzhCBnIzIN6gvgXPxBpJOhrQjSNsYSrUnTbsGDgDqrt+i6us6XcxTO4wlfn+Y4aHDr0n6pQZOEY8kMp+vnOEMz/8zoXjzXqu3sguPkOlzjJcON23DVlzJd5KjcSuupqm+B4BS0q84/WpZHaWkM3NNxoBylNoVfKjBavvJepfKIyBGd4LVpa/qiVHvsukbm19AAozpJybgKvcKA7M9gT9MPn3JK/Z+1sHCJaqEo4h0j4eC1pJou40BOvlx7tiP3RhTzChY0DHKPYh5BJCyYnCG6cM0vKJK90vvrA3zTfnJhpULxpT7P5taaPZQ1GPrtdk2N6WHD9lqOHUfDgVJLvSaaxykK+i+Zb995q+ga1Wu2RxtDyZQspNcp/8uVIpbAzTi6zkWr06+Y1sBHofyIaL5HkTpOjK2SdsTGoDqpR2onbu8LfineUb0LFe95LPUj0Yh9K4k9mwvz+tI/VPPNoZCQqLX4C8fr6mSGhdgGjqzUdF3GkVragOmIf94p6nzQO22SXIPOI4LSeft73S+aWoeAWVZg24Oy6mnL6iuqLEN+6rUU7f4YHWjhR+uWa92Yn+iOmFy4xI0/7tbS9YD/UFhTGSrt0EU5Bc0wfT9LneYb9prqzz9hXpKeX6Trk3OQ6FgJ9lwbRqAbU4HVZs0qXHC1XtfW2bpnZ+uJBBonIugbfASbVZYnktFSbg+HofKRdO3IC3lpw==" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="d6bb2d26-6fa4-418a-8dbf-2112e8f878ac" Version="1.1" Url="http://cruise-northcentralus.azurewebsites.net/WebForm/ViewMyProfile.aspx" ThinkTime="35" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://cruise-northcentralus.azurewebsites.net/WebForm/MyProfile.aspx" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://cruise-northcentralus.azurewebsites.net/WebForm/ViewMyProfile.aspx" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__EVENTTARGET" Value="ctl00$ContentPlaceHolder3$lnkMyProfile" RecordedValue="ctl00$ContentPlaceHolder3$lnkMyProfile" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN1.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="lxExlmYbmJVagRg9gI4Qj4GsjL9vvlVCvJnLFaNlRdW7sMbvJaISDxMbkMsCeuSuIodwKc02EpoOX7yZ6EXBqmYaZ6aOJg3vy/T7gf//tnI=" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="AC468C52" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="jdvJ6+kxuGhCOjErAmgobLTUNCnMI2jZ6lez7jaRtl0HxuXU8oism2bCstE5Pv5OMrDlkrczW/9HUGW6PTOa9BBkojRLTRqM+HrwfnnStwEdHMbezeOF/3pbOWI5m3WD5aA7/WeHRkoDeUOkplU0O3Rn8Sl3UzL8w3swe4OTWuIew9VKaJj6TNswUOkZbEtR+5PaGYhgHQfAks9VQBFLUtfyF686CmVzpzFSPbTIe/TjW4jpuS8nSOPCRt8defa2/jw67zAMR8mb/g7WsbBcUp7ydTr37dULduXxVcd5qzmHyz5sRxWx+gQGPZgg8O1UyJ5Wlp/nY2Pmjhgx+muqlBzN6a4Yk54TcNsIOYX+StBfZUi0MEJo9yMdQ/PcnBWRmyR1Hb8tfW3v2MID2GvJ+0gtn/XoL3tEbSUIWlpPlU1u271oTcg7c3HftpAB9ArUBfm3T1yRnHkp2gNy6imGEQ==" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder2$txtFname" Value="Sabry" RecordedValue="Sabry" CorrelationBinding="{{FormPostParam2.ctl00$ContentPlaceHolder2$txtFname}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder2$txtLname" Value="Masoud" RecordedValue="Masoud" CorrelationBinding="{{FormPostParam3.ctl00$ContentPlaceHolder2$txtLname}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder2$dpoGender" Value="Male" RecordedValue="Male" CorrelationBinding="{{FormPostParam9.ctl00$ContentPlaceHolder2$dpoGender}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder2$txtContact" Value="108929728" RecordedValue="108929728" CorrelationBinding="{{FormPostParam4.ctl00$ContentPlaceHolder2$txtContact}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder2$txtEmail" Value="b.ri88@hotmail.com" RecordedValue="b.ri88@hotmail.com" CorrelationBinding="{{FormPostParam5.ctl00$ContentPlaceHolder2$txtEmail}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder2$txtAddress" Value="Endah Regal" RecordedValue="Endah Regal" CorrelationBinding="{{FormPostParam6.ctl00$ContentPlaceHolder2$txtAddress}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder2$txtUsername" Value="sabry" RecordedValue="sabry" CorrelationBinding="{{FormPostParam7.ctl00$ContentPlaceHolder2$txtUsername}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder2$txtPassword" Value="123" RecordedValue="123" CorrelationBinding="{{FormPostParam8.ctl00$ContentPlaceHolder2$txtPassword}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder2$txtConfirmPassword" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="bdc12c81-4fd8-4ffb-918f-f8001016c27c" Version="1.1" Url="http://cruise-northcentralus.azurewebsites.net/WebForm/MyProfile.aspx" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://cruise-northcentralus.azurewebsites.net/WebForm/Login.aspx" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://cruise-northcentralus.azurewebsites.net/WebForm/MyProfile.aspx" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam1.__EVENTTARGET" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value=" id=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot; cla" />
+            <RuleParameter Name="Index" Value="6" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__EVENTTARGET" Value="ctl00$ContentPlaceHolder3$lnkLogout" RecordedValue="ctl00$ContentPlaceHolder3$lnkLogout" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN1.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="TcOno95y7oxI8QIsaEQ2mdBmSvJd2ifzze3Vz394W8onUxGPqrPrsDYZxhdRfVzyJgsdfULzJND7FuEjAMQziFajiaqgyN+dh/Qli0z106ow/7SItJw2nOjvwPSf6zNw1wr6GkjUjirsbzaEDfgexfVsJqc9G5Zmj3mz9l4A2O/kgfk2gPHxtYXAiJ/WP5CkI8KaOSBrVWL77EqEAuy1MJRw/mo9O4nD6SUbS3BTaPj7AwZB+FIotXtIL/or1WEKXm9PwAnOD/76ZusO/kjnCaSoaY3+cTClxUTqY6RgBna5np7wE83IrFYWk1hkPwgQ68dyccLXw3Bj2wZucosQpktN1rItVw5OtRVx3OGqOMZRWs7d0+cEaK6ZhCqUXvVpFaI1XaupW2FO14Bh85uhvQ6htplK32iGTJvO0xHZPTN+GPdIHghGKpUibgx/bQTs+ibqZl/JG9n3pAG5g70j9UeOIAdDgyM2a0WsJDxXUFPdxCvBupebVv0Z6AC6Tec4l45FAn05i4IklkF7bvCc0BTzmkTkZvIUm2BfLAHCMPyhN/gxN8GwqqKR98GIyrp64B74duul4BcLiaiuxCZ/iDcthp+RQFjpb/QGMf7nSCRW/pYrgLbaen35fqPg1494wOtT6H2mc/PcgvSr0FAjcx+XK9MR7KCYM1NBCZMUgVYsiRYB7cXh6By2fOyBoIL3Am0t1f19y83dSiopB/lWaT0aT5zqwwechmjwketaDtPGzhjE1L9zRtrfLCKt3dMbjy2VBNGNpb935NnYxua+ONJ14CReLqCVpYK6Khj3yWiYBxs/OJPLUNKasRVfEKbkXLojTMRzqksrlizjxYu6syIcmVWTi9VP1j6DG8LNkH1iAb8jbwu5oyJS/4NkAnTzQX58prBdraSq/ThoPVOOMbtGeKUUG1hAdjySGWjJz7b3UpsDHODYid+ENlDmp3WLLIdnhGOJLOMIupNLW33z0gf1jy+VzFkRQY55NM4qi8DEgp3JqBRUNQf+oaela2O4yCxaVn3xa/uumRI+zIDOouSrj1AzWBA167j8Upnowvz+4ZGwUNgCSS0ikaMmRA0Ep+ooL3oZUziAK/UoQs03kA7Ux8GKbrmHpmFfQc2dcGpLkELlIoZo7uVIT80xHen3luAIUtX0mEOe9cU1+n1cAn7/sJ9RwbSoAstivmuTNohOFygyKWXyP+oueAt2bKEk2s4hBBYhgMIcrqaa33E5YU063CkBuVUQqH/n5FK+2HibvNVTgjPDGvJHoy3mkVb3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="D59585A9" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="JgHma+feY6vx+s/fxLnuRbtEfrwh8sNgiMDBF5QDa/gzLMjXXKKGAJ7WzmwdWGf4GTNTm9ndUYv6hXPUNkTKxX1ycXKNeeH7PFcmUZsluPHQbS6glAACt7xR3HCDJ8967svnILecKil0iiZH6P7oapX1QGF+Po7ARpYgwaUJSp+8+gIjKuwCkfM+QBwP6pNkbY5NZfAIWz5XePPiYlxOdNUlVoRwaA/5gtPCTR+BfcdF76BlS/ujf7dbXW3wiJFXfgN9weWA8giDGXVpes+cdWhqh2a6H4G1ngWoEfOGtUfRIjAmkk9IT1gkFt/JaU2oxy7kWFORI8tC7vK4AF7pu1a7nxFWnX3QWdXuKF2YUynl/epFoM6mFzvImfVC1qo+TEFzZ14AFp34JQcQwnkg/6446LfzeJXk0L2GKW6oAI2q6K5XPqe/SufLsVXQTvQtnwuq7e8vz2yhRmHSulM9d/BzX35BVLR7akJNH7jDy999fCS+z3sjpYPQuViRe9RogjMYvoLOUD4DSVVs42hi2TfdCu/0PLH3bdlA/Aeeh3oQNwjEjGftxOoEp9qLfHUh7o3WWRUEnZAwIY5EZVvvPJzo/OSz5tWxYHytEMofkSJdPCptVk7+y0XBUp+NrfxraQ+/tcF0T+YNDxYRdbbFfuKLwgZgfKRWQOxKtvR5idtMDS6T/18dlH784tI25taYQ6sJkFnX3OLgoFQOHkpC31ogGgmtc6aJCHsNXaFr9OlerYZQ89MJoZ870oTI8iCDp3hFPBQOqyQCLv3V51fsrs7SuL7CVdJCYgeekxknt3icElVKmanJXuEAi5hihNCPHt9RGPjZThOJccakuem5Tvms74ZGlcT9/6R7OKvCvV5UhlPVL3z8au53K7Uj6U0K7C6yq9+YKhgCgWFT0RAon8iBlAhvkQLRtvM5HtkPnMnsHW6inpnaZAYBh+a3UDwRGfp1AApAFu+x3bdHXSpRYxUQ3/sKiBs2VMh4E0Z62R6Cs0Kg3h1JHIL0uhnVT6eg82OjFZrAs7xqdmnrYK5aSQoCqWV0K42K4PcBarj3ye/KW5ct11dbZv4w/QNUioZ3UZwJFlqMmyffCXQegzlg1nGzfLYC4kx2QJJRhZGBcp/+D+R/rJQ65Dfv9/3WkeK5JM843K8gSorVnBiC9/MfuA==" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="47fa5b03-8faf-4c18-940a-8c9978b933cb" Version="1.1" Url="http://cruise-northcentralus.azurewebsites.net/WebForm/Login.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://cruise-northcentralus.azurewebsites.net/WebForm/SignUp.aspx" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://cruise-northcentralus.azurewebsites.net/WebForm/Login.aspx" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__EVENTTARGET" Value="LinkButton1" RecordedValue="LinkButton1" CorrelationBinding="{{FormPostParam1.__EVENTTARGET}}" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN1.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="nv6mJ/COFLcPUwMcubnXm6qFncpZo2MPWlBzWwYR6cMnVuwgvGUCm5VF/3zbtOgVovJTT3mPeBlurpNYsNx2LpGeo8G5a8w6GRuN/1vcWoM=" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="A66243D2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="o44m+0YJZgrsvtRE7824X+K4z877tSVMXA+PZa750MJGsrm19dAES9gs7nYoPadWbKwVVPKzMJHGxNSQJP2LFg7YTMQZ5UcAyCT+UWy5WTcTfU0N3FcEzNQobIIEPi6VnK5AN5hD+fxqBmBr/D6DFTT0EtIt9u1NgRHgFTyUTv0jbPdznxaZW09EFtBRXjUZNTZYT+AN0rX1Y73oFdXb7w==" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="txtUsername" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="txtPassword" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>

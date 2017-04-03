@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FunctionSite.master.cs" Inherits="Cruise_App.WebForm.FunctionSite" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Style/Style.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <div id="wrapper">
+            <%--wrapper start--%> 
+            <div id="top"><%--top start--%>
+               
+                    <div id="logo"><%--logo start--%>
+                        <img src="../Image/logo2.png" />
+                    </div><%--logo end--%>
+                    <div id="nav"><%--nav start--%>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+
+                        </asp:ContentPlaceHolder>
+                        
+                    </div><%--nav end--%>
+        </div>
+        <%--top end--%>
+            
+            <div id="subbanner"> <%--subbaner start--%>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+            </div><%--subbanner end--%>
+            
+            <div id="content"><%--content start--%>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+                </asp:ContentPlaceHolder>
+            </div><%--content end--%>
+            <div id="footer">
+                 <!-- footer start-->
+                <br />
+                <br />
+                
+                 <br />
+                 <br />
+
+            </div>
+        </div><%--wrapper end--%>
+    </form>
+</body>
+</html>

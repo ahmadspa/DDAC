@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Cruise_App.WebForm.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../Style/Style.css" rel="stylesheet" />
+    <link href="../Style/Slider.css" rel="stylesheet" />
+    <script src="../Script/jquery-2.1.4.min.js"></script>
+    <script src="../Script/jquery.cycle.js"></script>
+    <script src="../Script/MyScript.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <%--wrapper start--%> 
+            <div id="top"><%--top start--%>
+               
+                    <div id="logo"><%--logo start--%>
+                        <img src="../Image/logo2.png" />
+                    </div><%--logo end--%>
+                    <div id="nav"><%--nav start--%>
+                        <ul>
+                            <li><a href="../Default.aspx"><img src="../Image/home24.png" />Home</a></li>
+                            <li><a href="../WebForm/About.aspx"><img src="../Image/user24.png" />About</a></li>
+                            <li><a href="../WebForm/Contact.aspx"><img src="../Image/telephone24.png" />Contact</a></li>
+                            <li><a href="../WebForm/SignUp.aspx"><img src="../Image/add_user24.png" />Sign Up</a></li>
+                            <li><a href="../WebForm/Login.aspx"><img src="../Image/login_in24.png" />Login</a></li>
+                        </ul> 
+                        <%--<ul>
+                            <li><a><img src="../Image/envelope-icon.png" />Contact</a></li>
+                            <li><a><img src="../Image/login-lock-icon.png" />Login</a></li>
+                        </ul>--%>
+                    </div><%--nav end--%>
+        </div>
+        <%--top end--%>
+            <div id="banner"><%--banner start--%>
+                <div id="pager"></div>
+                <div id="pause"><img src="../Image/Pause-icon.png"/ style="position:absolute; top:12px; right:13px"></div>
+                <div id="play"><img src="../Image/play-icon.png"/ style="position:absolute; top:12px; right:11px;"></div>
+                <div id="next"><img src="../Image/nav-right.png"/ style="position:absolute; top:12px; right:12px;"></div>
+                <div id="prev"><img src="../Image/nav-left.png"/ style="position:absolute; top:12px; right:15px"></div>
+                <div id="slider">
+                    <!-- slider start-->
+                    <div class="item">
+                        <!--item1 start-->
+                        <img src="../Image/slide2.jpg" />
+                        <div class="info">
+                            <!--info start-->
+                            <h2>CMS</h2>
+                            <p>More About CMS Shipments <a href="#">View More Info.</a></p>
+                        </div>
+                        <!--end of info-->
+                    </div>
+                    <!--end of item1-->
+
+                    <div class="item">
+                        <!--item2 start-->
+                        <img src="../Image/slide1.jpg" />
+                        <div class="info">
+                            <!--info start-->
+                            <h2>CMS</h2>
+                            <p>More About CMS Shipments <a href="#">View More Info.</a></p>
+                        </div>
+                        <!--end of info-->
+                    </div>
+                    <!--end of item2-->
+                    <div class="item">
+                        <!--item3 start-->
+                        <img src="../Image/slider3.jpg" />
+                        <div class="info">
+                            <!--info start-->
+                            <h2>CMS</h2>
+                            <p>More About CMS Shipments <a href="#">View More Info.</a></p>
+                        </div>
+                        <!--end of info-->
+                    </div>
+                    <!--end of item3-->
+
+                    <div class="item">
+                        <!--item4 start-->
+                        <img src="../Image/slider4.jpg" />
+                        <div class="info">
+                            <!--info start-->
+                            <h2>APU University Events</h2>
+                            <p>More About University Events <a href="#">View More Info.</a></p>
+                        </div>
+                        <!--end of info-->
+                    </div>
+                    <!--end of item4-->
+
+                    <div class="item">
+                        <!--item5 start-->
+                        
+                            <!--info start-->
+                            <h2>CMS Shipments</h2>
+                            <p>More About CMS Shipments <a href="#">View More Info.</a></p>
+                        </div>
+                        <!--end of info-->
+                    </div>
+                    <!--end of item5-->
+                </div>
+                <!-- slider end-->
+            </div><%--banner end--%>
+            <div id="subbanner"> <%--subbaner start--%>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+            </div><%--subbanner end--%>
+            
+            <div id="content"><%--content start--%>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+                </asp:ContentPlaceHolder>
+            </div><%--content end--%>
+            <div id="footer">
+                 <!-- footer start-->
+                <br />
+                <br />
+          
+                
+                 <br />
+                 <br />
+
+            </div>
+        </div><%--wrapper end--%>
+    </form>
+</body>
+</html>

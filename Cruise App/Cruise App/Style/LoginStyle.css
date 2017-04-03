@@ -1,0 +1,127 @@
+﻿body {
+    background-color: rgba(255,255,255,0.9);
+    font-size: 95%; /*Base font size 14 px*/
+    font-family:'Palatino Linotype';
+    line-height: 1.5;
+    text-align: left;
+    color: #000305;
+}
+.outer{
+    background-color:rgba(0,0,0,0.2);
+    border-radius:3px;
+    height:450px;
+    width:650px;
+    position:relative;
+    left:350px;
+    top:20px;
+    
+}
+
+.inner{
+    background-color:rgba(255,255,255,0.9);
+    border-radius:2px;
+    margin-left:10px;
+    margin-top:10px;
+    height:430px;
+    width:630px;  
+    position:absolute;  
+}
+.info{
+    border-bottom:1px solid rgba(0,0,0,0.2);
+    margin-left: 2%;
+    width:80%;
+}
+.inner h1 {
+    margin-left: 0%;
+    color:rgba(0,0,0,0.5);
+}
+.inner h4 {
+    margin-left: 2%;
+    color:rgba(0,0,0,0.5);
+}
+.table{
+    margin-left: 2%;
+}
+.text{
+    text-align:right;
+    color:rgba(0,0,0,0.7);
+}
+.textbox{
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius:3px;
+    margin-bottom:2px;
+    font-size:16px;
+    font-family:'Palatino Linotype';
+    
+}
+.buttons{
+    width:586px;
+    margin-left:2%;
+
+}
+.send{
+    width:125px;
+    float:left;
+}
+.cancel{
+    width:125px;
+    float:left;
+    padding-right:6px;
+    margin-left:35px;
+}
+#btnSend{
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-family:'Palatino Linotype';
+    font-size: 16px;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    height: 45px;
+    width: 120px;
+    font-weight:600;
+    transition: background 0.3s linear 0s, color 0.4s linear 0s;
+    float:right;
+    margin-right:-24px;
+}
+#btnSend:hover{
+    background-color:rgba(248, 142, 132, 0.95);
+    cursor:pointer;
+    transition: background 0.3s linear 0s, color 0.4s linear 0s;
+}
+
+#btnCancel{
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-family:'Palatino Linotype';
+    font-size: 16px;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    height: 45px;
+    width: 120px;
+    font-weight:600;
+    transition: background 0.3s linear 0s, color 0.4s linear 0s;
+    float:right;
+    margin-right:-20px;
+}
+
+#btnCancel:hover{
+    background-color:rgba(248, 142, 132, 0.95);
+    cursor:pointer;
+     transition: background 0.3s linear 0s, color 0.4s linear 0s;
+}
+.message{
+    position:relative;
+    width:150px;
+    margin-top:3px;
+    margin-left:1%;
+    float:left;
+    color:#0094ff;
+}
+.valid{
+    font-family:'Palatino Linotype';
+    color:rgba(0,0,0,0.7);
+}
